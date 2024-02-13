@@ -1,0 +1,552 @@
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+head {
+  /* background-color: #2e3031; */
+  top: 0%;
+  overflow: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+@media screen and (max-width: 999px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 999px) {
+  header nav .container {
+    padding-bottom: 0.75rem;
+  }
+  header nav .nav-container {
+    justify-content: center;
+  }
+  header .intro {
+    top: 55%;
+  }
+  header .socials {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .intro {
+    width: 90%;
+  }
+  header nav .nav-container #logo img {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav .nav-container #logo {
+    font-size: 1.5rem;
+  }
+  header nav .mobile-menu .container .mobile-menu-links ul li {
+    margin: 0 0.5rem;
+  }
+  header .hero span {
+    max-width: 100%;
+  }
+  header .hero p {
+    width: 100%;
+  }
+}
+@media screen and (min-height: 900px) {
+  header {
+    min-height: 70vh;
+  }
+  header #particles-js {
+    height: 70vh;
+  }
+}
+@media (max-width: 500px) {
+  .education .edu-container .university {
+    padding: 20px;
+  }
+}
+header #particles-js {
+  left: 0;
+  margin-top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+header {
+  top: 0;
+  background-color: #181a1b;
+  overflow: hidden;
+  width: 1540px;
+  height: 600px;
+  background-size: cover;
+  clip-path: polygon(200% 70%, 100% 0, 0 0, 0 100%);
+}
+header nav .hide-for-mobile {
+  background-attachment: fixed;
+  position: relative;
+  padding: 35px 15px 10px 1000px;
+}
+header nav .hide-for-mobile li {
+  float: left;
+}
+header .nav-container .hide-for-mobile li a {
+  background-attachment: fixed;
+  font-size: 16px;
+  color: #3dcfd3;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+/*header .nav-container .top-left p{
+    padding: 5px 5px 10px 25px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3dcfd3;
+    transition: all 0.3s ease;
+}
+header nav .mobile-menu {
+    position: relative;
+    z-index: 1000;
+}
+header nav .mobile-menu .container {
+    padding-top: 0;
+}
+header nav .mobile-menu .container .mobile-menu-links ul {
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+header nav .mobile-menu .container .mobile-menu-links ul li {
+    margin: 0rem 1rem;  
+}
+header nav .mobile-menu .container .mobile-menu-links ul .link::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 0;
+    height: 2px;
+    top: 3px;
+    margin: auto;
+    background: #3b82f6;
+    transition: width 0.3s ease;
+}
+header nav .mobile-menu .container .mobile-menu-links ul .link:hover::after {
+    width: 100%;
+}*/
+header .intro .h1 {
+  color: white;
+  padding: 125px 100px 30px 500px;
+  font-family: "Times New Roman", serif;
+  font-style: inherit;
+  font-weight: 500;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+header .intro .h1 span {
+  color: #3dcfd3;
+  font-family: serif;
+  font-style: oblique;
+}
+header .intro .self-intro {
+  color: white;
+  padding-left: 375px;
+  text-align: justify;
+  font-size: 18px;
+}
+header .intro .self-intro a {
+  position: relative;
+  color: #3b82f6;
+  text-decoration: underline;
+}
+.image {
+  border-radius: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: 400px;
+  margin-top: -230px;
+  opacity: 1;
+}
+.contactme {
+  padding-left: 450px;
+  padding-top: 50px;
+}
+.button--flex {
+  position: relative;
+  align-items: center;
+  background-color: #3b82f6;
+  color: white;
+  margin: 4px 3px;
+  font-size: 17px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+.resume {
+  font-size: 16px;
+  position: relative;
+  background-color: transparent;
+  color: #3b82f6;
+  border: 2px solid white;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+.resume:hover {
+  color: white;
+}
+header .socials {
+  position: absolute;
+  bottom: 45%;
+  left: -15px;
+  z-index: 10;
+}
+header .socials ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header .socials ul li {
+  transition: 0.3s;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+header .socials ul li a {
+  text-align: right;
+  height: 100%;
+  width: 100%;
+  padding: 15px 20px;
+}
+header .socials ul li a i {
+  font-size: 1.75rem;
+  margin-left: 1.5rem;
+}
+header .socials ul li:hover {
+  transform: translateX(25px);
+}
+.linkedin {
+  background-color: #3b82f6;
+}
+.github {
+  background-color: #2e3031;
+}
+.gmail {
+  background-color: white;
+}
+.linkedin .socials-text {
+  color: white;
+}
+.github .socials-text {
+  color: white;
+}
+.gmail .socials-text,
+.gmail i {
+  color: #2e3031;
+}
+.linkedin i,
+.github i {
+  color: white;
+}
+/*----------Projects--------*/
+#projects .container {
+  text-align: center;
+  align-items: top;
+  padding-bottom: 100px;
+  padding-top: 15px;
+}
+.container .heading {
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-bottom: 25px;
+}
+.container span {
+  color: #008080;
+}
+.listofprojects {
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-left: 90px;
+}
+.listofprojects h4 {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.listofprojects p {
+  text-align: justify;
+  color: black;
+  font-size: 14px;
+  padding-left: 150px;
+  padding-right: 25px;
+}
+.listofprojects a {
+  font-size: 16px;
+  color: blue;
+}
+
+/*-------Education--------*/
+.edu-container {
+  text-align: center;
+}
+.edu-title {
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+.edu-title span {
+  color: #008080;
+}
+.university {
+  color: black;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 900px;
+  background-color: white;
+  box-shadow: 5px 7px 5px 10px #ecf0f1;
+  padding: 15px;
+}
+.education-column {
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.ttu-logo img {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 75px;
+  height: 150px;
+}
+.edu-info {
+  text-align: justify;
+  align-items: center;
+  padding: 0 20px 0 50px;
+}
+.bachelors {
+  color: black;
+  text-align: center;
+  margin-left: 550px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 900px;
+  background-color: white;
+  box-shadow: 5px 7px 5px 10px #ecf0f1;
+  padding: 15px;
+}
+.engineering {
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.nhce-logo img {
+  margin: 0;
+  padding-right: 20px;
+  padding-left: 15px;
+  height: 250px;
+}
+.mlrit-info {
+  text-align: justify;
+  align-items: center;
+  padding: 0 20px 0 10px;
+}
+/*-------------SKILLS----------*/
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 20x;
+  display: table;
+}
+
+.row:after {
+  content: center;
+  display: table;
+  clear: both;
+}
+.skills-column {
+  display: table;
+}
+.skills-title {
+  text-align: center;
+  color: black;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+}
+.skills-title span {
+  color: #008080;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+}
+.skillset {
+  align-items: center;
+  padding: 20px;
+}
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+}
+.skills__name {
+  font-size: 14px;
+}
+.skills__number {
+  font-size: small;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.skillset .logos {
+  height: 30px;
+  width: 30px;
+}
+.skills__bar,
+.skills__percentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+.skills__bar {
+  background-color: #ecf0f1;
+  margin-bottom: 10px;
+}
+.skills__percentage {
+  display: block;
+  background-color: #181a1b;
+}
+.skills__html {
+  width: 100%;
+}
+.skills__css {
+  width: 100%;
+}
+.skills__boot {
+  width: 90%;
+}
+.skills__js {
+  width: 90%;
+}
+.skills__react {
+  width: 80%;
+}
+.skills__c {
+  width: 80%;
+}
+.skills__cpp {
+  width: 70%;
+}
+.skills__py {
+  width: 70%;
+}
+.skills__sql {
+  width: 40%;
+}
+.skills {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 350px;
+  padding-right: 350px;
+  color: black;
+}
+
+/*-------CERTIFICATION------*/
+#certifications .container {
+  text-align: center;
+  align-items: top;
+  padding-bottom: 100px;
+  padding-top: 15px;
+}
+.container .heading {
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  padding-bottom: 25px;
+}
+.container span {
+  color: #008080;
+}
+.listofcertifications {
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-bottom: 25px;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-left: 90px;
+}
+.listofcertifications h4 {
+  text-align: left;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.listofcertifications p {
+  text-align: justify;
+  color: black;
+  font-size: 14px;
+  padding-left: 150px;
+  padding-right: 25px;
+}
+.listofcertifications a {
+  font-size: 16px;
+  color: blue;
+}
+
+/*---------CONTACT--------*/
+.section-title {
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.section-title span {
+  color: #008080;
+}
+.subtitle {
+  color: #898989;
+}
+.card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-top: 30px;
+}
+.card-container .email {
+  padding: 25px;
+  padding-left: 200px;
+  align-items: center;
+}
+.card-container .email a {
+  color: #898989;
+}
+.card-container .git {
+  padding: 25px;
+  align-items: center;
+  padding-left: 250px;
+}
+.card-container .git a {
+  color: #898989;
+}
+.card-container .linkedin-contact {
+  padding: 25px;
+  align-items: center;
+  padding-left: 200px;
+}
+.card-container .linkedin-contact a {
+  color: #898989;
+}
+#contact .contact-container {
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
