@@ -1,109 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sai Chandu Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">  
+    <link rel = 'stylesheet' href='style.css'>
+    <script src="https://kit.fontawesome.com/fee967093c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
   </head>
 
   <body>
-    <header id="header">
-      <div id="particles-js">
-        <nav id="nav" data-aos="fade-in">
-          <div class="nav-container">
-            <ul class="hide-for-mobile nav-links flex">
-              <li>
-                <a href="#projects" class="link"
-                  ><i class="fas fa-bolt"></i>Projects</a
-                >
-              </li>
-              <li>
-                <a href="#education" class="link"
-                  ><i class="glyphicon glyphicon-education"></i>Education</a
-                >
-              </li>
-              <li>
-                <a href="#skills" class="link"
-                  ><i class="glyphicon glyphicon-hourglass"></i>Skills</a
-                >
-              </li>
-              <li>
-                <a href = "#certifications" class="link">
-                  <i class="glyphicon glyphicon-certificate"></i>Certifications</a>
-              </li>
-
-            </ul>
-          </div>
-          
-        </nav>
-      </div>
-      <!----Intro tags-->
-      <div class="intro">
-        <h1 class="h1">Hi, I'm <span>Sai Chandu</span></h1>
-        <p class="self-intro">
-          I am a Computer Science graduate student from
-          <a href="https://www.ttu.edu/" target="_blank"
-            >Texas Tech University.</a
-          >
-          <br />As a dedicated professional, I excel in acquiring valuable
-          <br />insights and navigating evolving technology.
-        </p>
-        <div class="contactme">
-          
-          <a
-            href="https://drive.google.com/file/d/1hL58CwpVmcT3J-4eT8YSyfQQzjJLPSax/view?usp=sharing"
-            target="_blank"
-            class="button button--flex"
-            download="Sai_Chandu_Resume.pdf"
-            >Download Resume</a
-          >
+    <div class='site-main-wrapper'>
+      <button class ='hamberger'>
+        <div class='container-hamberger'>
+          <div class='stripe'></div>
+          <div class='stripe'></div>  
+          <div class='stripe'></div>      
         </div>
-      </div>
-      <img
-        class="image"
-        src="profilepic.jpg"
-        role="img-fluid"
-        width="200"
-        height="200"
-      />
-      <div class="socials" data-aos="fade-in">
-        <ul>
-          <li class="linkedin">
-            <a
-              href="https://www.linkedin.com/in/sai-chandu-9b8602151/"
-              target="_blank"
-              ><span class="socials-text">LinkedIn</span
-              ><i class="fab fa-linkedin fa-2x"></i
-            ></a>
-          </li>
-          <li class="github">
-            <a href="https://github.com/TBNSChandu" target="_blank"
-              ><span class="socials-text">GitHub</span
-              ><i class="fab fa-github fa-2x"></i
-            ></a>
-          </li>
-          <li class="gmail">
-            <a class="mail" href="mailto:cschandu776@gmail.com"
-              ><span class="socials-text">Email</span
-              ><i class="fas fa-envelope fa-2x"></i
-            ></a>
-          </li>
+      </button>
+      <div class = 'mobile-nav'>
+        <ul class='list'>
+          <button class="times"><img src="./images/cross.png" alt="times-logo"></button>
+          <li><a href='#education'><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                <li><a href='#skills'><i class="fa-sharp fa-solid fa-hourglass-end"></i> Skills</a></li>
+                <li><a href='#projects'><i class="far fa-bookmark"></i> Projects</a></li>
+                <li><a href = "#certifications" class="link"><i class="fas fa-certificate"></i>Certifications</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
         </ul>
       </div>
-    </header>
+      <header>
+        <div id ='particles-js'></div>
+        <div class='container'>
+          <nav id = 'main-nav' class='flex items-right justify-between'>
+            <h1 class="left flex items-left"></h1>
+              <div class='right flex items-right'>
+                <div class='tab-list'>
+                   <a href='#education'><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                   <a href='#skills'><i class="fa-sharp fa-solid fa-hourglass-end"></i> Skills</a>
+                     <a href='#projects'><i class="far fa-bookmark"></i> Projects</a>
+                        <a href='#certifications'><i class="fas fa-certificate"></i>Certifications</a>
+                          <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+                </div>
+              </div>
+          </nav>
+
+          <div class='hero flex itmes-center justify-between'>
+            <div class='left flex-1 flex justify-center'>
+              <div class="profile">
+                <div class="socials" data-aos="fade-in">
+                  <ul>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/sai-chandu-9b8602151/" target="_blank"><span class="socials-text">LinkedIn</span><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li class="github"> <a href="https://github.com/TBNSChandu" target="_blank"><span class="socials-text">GitHub</span><i class="fab fa-github fa-2x"></i></a></li>
+                    <li class="gmail"><a class="mail" href="mailto:cschandu776@gmail.com"><span class="socials-text">Email</span><i class="fas fa-envelope fa-2x"></i></a></li>                   
+                </ul>
+                </div>
+            </div>
+            <img src='https://avatars.githubusercontent.com/u/60316414?s=400&u=baa7fe47e99df86d9a348b3f4d8eb1bce00c0939&v=4' alt='Chandu'/>
+          </div>
+          <div class='right flex-1'>
+            <h6>Hi, I'm<span> Sai Chandu</span></h6>
+            <h3>I'm a Full Stack <span> Developer</span></h3>
+            <p>As a dedicated professional, I excel in acquiring<br>valuable insights and navigating evolving technologies.</p>
+              <div class='Resume'>
+                <a href="https://drive.google.com/file/d/1Fb3_20k1b25mrMuJX_kUjYyjkSzP7NiJ/view?usp=sharing" target="_blank" class="btn btn-primary" download="Sai_Chandu_Resume.pdf">Download Resume</a>
+              </div> 
+             </div>
+            </div>
+      </header>
+
+
+    </div>
 
     <!------------------Projects----------------->
     <section id="projects" class="projects">
@@ -116,13 +84,11 @@
               As a Full Stack Web Developer, spearheaded the execution of the
               "Adaptive Data Visualization" project, culminating in a
               state-of-the-art platform enabling users to seamlessly visualize
-              data from CSV or XLS files.
-            </p>
+              data from CSV or XLS files.<br>
             <a
               href="https://github.com/TBNSChandu/Adaptive-Data-Visualization"
               target="_blank"
-              >https://github.com/TBNSChandu/Adaptive-Data-Visualization</a
-            >
+              >https://github.com/TBNSChandu/Adaptive-Data-Visualization</a></p>
           </div>
 
           <div class="proj2" data-aos="zoom-out-left" data-aos-delay="150">
@@ -131,13 +97,11 @@
               The Employee_Management_System project simplifies the management
               of employee data, both personal and professional, within a
               company. Its primary objective is to streamline the process of
-              maintaining accurate records of personnel.
-            </p>
+              maintaining accurate records of personnel.<br>
             <a
               href="https://github.com/TBNSChandu/Employee_Management_System"
               target="_blank"
-              >https://github.com/TBNSChandu/Employee_Management_System</a
-            >
+              >https://github.com/TBNSChandu/Employee_Management_System</a></p>
           </div>
 
           <div class="proj3" data-aos="zoom-out-right" data-aos-delay="200">
@@ -147,13 +111,12 @@
               application, boosting productivity across platforms. Efficiently
               manage tasks and synchronize to-do lists, streamlining workflow
               for users. Enjoy seamless coordination across applications with
-              our integrated task management and to-do synchronization web app.
-            </p>
+              our integrated task management and to-do synchronization web app.<br>
             <a
               href="https://github.com/TBNSChandu/Task-Integrate-To-Do-Sync"
               target="_blank"
               >https://github.com/TBNSChandu/Task-Integrate-To-Do-Sync</a
-            >
+            ></p>
           </div>
 
           <div class="proj4" data-aos="zoom-out-left" data-aos-delay="250">
@@ -165,13 +128,13 @@
               comprehensive website design showcasing bio, resume, and contact
               details, introducing an engaging technical blog to spotlight
               expertise, resulting in a 40% increase in website traffic and 25%
-              more inquiries.
-            </p>
+              more inquiries.<br>
+            
             <a
-              href="https://github.com/Himaja930/Encryption-and-Decryption-using-RSA-algorithm"
+              href="https://github.com/TBNSChandu/Portfolio"
               target="_blank"
-              >https://github.com/Himaja930/Encryption-and-Decryption-using-RSA-algorithm</a
-            >
+              >https://github.com/TBNSChandu/Portfolio</a
+            ></p>
           </div>
         </div>
       </div>
@@ -182,9 +145,7 @@
         <h2 class="edu-title" data-aos="fade-in">My <span>Education</span></h2>
         <div class="university" data-aos="fade-down-right">
           <div class="education-column">
-            <div class="ttu-logo">
-              <img src="ttu logo.png" alt="ttu-logo" />
-            </div>
+            
             <div class="edu-info">
               <h4 class="education year">2022-2023</h4>
               <h4>
@@ -205,10 +166,8 @@
         </div>
         <div class="bachelors" data-aos="fade-down-left">
           <div class="engineering">
-            <div class="mlrit-logo">
-              <img src="btechpic.png" alt="nhce logo" />
-            </div>
-            <div class="nhce-info">
+            
+            <div class="mlrit-info">
               <h4 class="edu period">2017-2021</h4>
               <h4>
                 MLR Institute of Technology - Bachelor's in Computer Science
@@ -229,16 +188,17 @@
     </section>
     <!---------------SKILLS------------->
     <section class="skills" id="skills">
+      <div class="grid-containers">
       <h2 class="skills-title" data-aos="fade-in">
         Technical <span>Skills</span>
       </h2>
-      <div class="skillset" data-aos="slide-right">
+      <div class="skillset">
         <div class="row">
           <div class="column">
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="HTML5_logo.png" />HTML</p>
+                <p><img class="logos" src="./images/HTML5_logo.png" />HTML</p>
                 <h3>
               </div>
             </div>
@@ -248,7 +208,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="CSS3_logo.png" />CSS</p>
+                <p><img class="logos" src="./images/CSS3_logo.png" />CSS</p>
                 <h3>
               </div>
             </div>
@@ -260,7 +220,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="bootstrap-logo.png" />Bootstrap</p>
+                <p><img class="logos" src="./images/bootstrap-logo.png" />Bootstrap</p>
                 <h3>
               </div>
             </div>
@@ -270,7 +230,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="javascript_logo.png" />JavaScript</p>
+                <p><img class="logos" src="./images/javascript_logo.png" />JavaScript</p>
                 <h3>
               </div>
             </div>
@@ -282,7 +242,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="angular.png" />AngularJS</p>
+                <p><img class="logos" src="./images/angular.png" />AngularJS</p>
                 <h3>
               </div>
             </div>
@@ -292,7 +252,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="typescript.png" />TypeScript</p>
+                <p><img class="logos" src="./images/typescript.png" />TypeScript</p>
                 <h3>
               </div>
             </div>
@@ -305,7 +265,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="c sharp.jpg" />C#</p>
+                <p><img class="logos" src="./images/c sharp.jpg" />C#</p>
                 <h3>
               </div>
             </div>
@@ -315,31 +275,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="net.jpg" />.NET Framework</p>
-                <h3>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        
-        <div class="row">
-          <div class="column">
-            <div class="skills_data">
-              <div class="skills_titles">
-                <h3 class="skills_name">
-                <p><img class="logos" src="java.png" />Java</p>
-                <h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="skills_data">
-              <div class="skills_titles">
-                <h3 class="skills_name">
-                <p><img class="logos" src="sql-logo.svg" />SQL</p>
+                <p><img class="logos" src="./images/net.jpg" />.NET Framework</p>
                 <h3>
               </div>
             </div>
@@ -353,7 +289,7 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="rest.png" />RESTful API</p>
+                <p><img class="logos" src="./images/java.png" />Java</p>
                 <h3>
               </div>
             </div>
@@ -363,22 +299,40 @@
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">
-                <p><img class="logos" src="swagger.png" />Swagger</p>
+                <p><img class="logos" src="./images/sql.png" />SQL</p>
                 <h3>
               </div>
             </div>
           </div>
         </div>
 
-       
 
-       
         
+        <div class="row">
+          <div class="column">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">
+                <p><img class="logos" src="./images/rest.png" />RESTful API</p>
+                <h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="skills_data">
+              <div class="skills_titles">
+                <h3 class="skills_name">
+                <p><img class="logos" src="./images/swagger.png" />Swagger</p>
+                <h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
-
     <!-----------------CERTIFICATIONS------------->
-   
     <section id="certifications" class="certifications">
       <div class="container">
         <h2 class="heading">My <span>Certifications</span></h2>
@@ -387,8 +341,7 @@
           <div class="certification" data-aos="zoom-out-right" data-aos-delay="100">
             <h4>C#:</h4>
             <p>
-              Foundational C# Certification with Microsoft
-            </p>
+              Foundational C# Certification with Microsoft.</p>
             <a href="https://www.freecodecamp.org/certification/bala_thutupalli/foundational-c-sharp-with-microsoft" target="_blank">
               https://www.freecodecamp.org/certification/bala_thutupalli/foundational-c-sharp-with-microsoft</a>
           </div>
@@ -397,8 +350,7 @@
           <div class="certification" data-aos="zoom-out-left" data-aos-delay="150">
             <h4>Angular:</h4>
             <p>
-              The Comprehensive Angular Certification, granted by Udemy
-            </p>
+              The Comprehensive Angular Certification, granted by Udemy.</p>
             <a href="https://www.udemy.com/certificate/UC-8bb9a995-6e5e-48bf-8761-98ccc5910bbd/" target="_blank">
               https://www.udemy.com/certificate/UC-8bb9a995-6e5e-48bf-8761-98ccc5910bbd/k</a>
           </div>
@@ -407,46 +359,62 @@
         </div>
       </div>
     </section>
+    
       
     <!-----------------CONTACT ME----------------->
-    <section id="contact" class="contact">
-      <div class="contact-container" data-aos="slide-up">
-        <h2 class="section-title" data-aos="fade-in">
-          <span>Contact </span>Me
-        </h2>
-        <h5 class="subtitle">Get in touch</h5>
-        <div class="card-container">
-          <div class="email" data-aos="slide-up">
-            <i class="fas fa-envelope fa-2x fa-fw"></i>
-            <h5>Email At</h5>
-            <a href="https://gmail.com" class="account" target="_blank"
-              >cschandu776@gmail.com</a
-            >
+    <section id='contact' class ='contact'>
+      <div class='Container'>
+          <div class='contact-heading'>
+              <h1 class='section-heading'><span>Contact</span> Me</h1>
           </div>
-          <div class="git" data-aos="slide-up">
-            <i class="fab fa-github fa-2x"></i>
-            <h5>Visit GitHub Account</h5>
-            <a
-              href="https://github.com/TBNSChandu"
-              class="account"
-              target="_blank"
-              >https://github.com/TBNSChandu</a
-            >
+          
+          <div class='card-wrapper'>
+              <div class="card">
+                  <a class='socials'href = "tel:+18067309318" target="blank">
+                  <img src='images/mobile.jpg' alt='mobile'> 
+                  <h2>Call On</h2>
+                  <h6>+1 806-701-8811</h6>
+                  </a>
+                  
+              </div>
+              <div class="card">
+                  <a  class='socials'href = "https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=cschandu776@gmail.com" target="blank">
+                  <img src='images/gmail.webp' alt='email'> 
+                  <h2>Email At</h2>
+                  <h6>cschandu776@gmail.com</h6>
+                  </a>
+                  
+              </div>
+              <div class="card">
+                  <a class='socials' href='https://github.com/TBNSChandu' target="blank">
+                      <img src='images/GitHub-Mark.png' alt='github'> 
+                      <h2>Visit Github Account</h2>
+                      <h6>https://github.com/TBNSChandu</h6>
+                      </a>
+                  
+              </div>
+              <div class="card">
+                  <a class='socials' href="https://www.linkedin.com/in/sai-chandu-9b8602151/" target="blank"> 
+                     <img src='images/linkedin.png' alt='linkedin'> 
+                  <h2>Available On Linkedin</h2>
+                  <h6>https://www.linkedin.com/in/sai-chandu-9b8602151/</h6> 
+                  </a>
+
+              </div>
+              
           </div>
-          <div class="linkedin-contact" data-aos="slide-up">
-            <i class="fab fa-linkedin fa-2x"></i>
-            <h5>Available on LinkedIn</h5>
-            <a
-              href="https://www.linkedin.com/in/sai-chandu-9b8602151/"
-              class="account"
-              target="_blank"
-              >https://www.linkedin.com/in/sai-chandu-9b8602151/</a
-            >
-          </div>
-        </div>
       </div>
-    </section>
-    <script src="particles.js"></script>
+  </section>
+
+
+
+
+
+
+
+
+
+    <script src="particle.js"></script>
     <script src="app.js"></script>
     <!-- AOS Animations -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
