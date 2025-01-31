@@ -73,6 +73,15 @@ header nav .left {
 .hero {
   padding: 6rem 0;
 }
+.edu-info a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.edu-info a:hover {
+  color: black;
+}
 
 header .socials {
   bottom: 45%;
@@ -348,6 +357,76 @@ section.project-list a {
   padding-bottom: 45px;
 }
 
+/* Experience Section */
+.experience {
+  padding: 6rem 0;
+  background-color: var(--light);
+}
+
+.experience .section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 2rem; /* Reduced margin-bottom */
+  text-align: center;
+  color: var(--secondary);
+  line-height: 1.2;
+}
+
+.experience .section-heading span {
+  color: var(--primary);
+}
+
+.experience-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.experience-card {
+  background-color: var(--pure);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card h3.inline-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-card .role {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.experience-card .details {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(57, 118, 100);
+}
+
+.experience-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.experience-card ul li {
+  font-size: 1rem;
+  color: var(--ternary);
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
 /* ------SKILLS---*/
 .grid-containers {
   display: table;
